@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/textEmail"
+                android:padding="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:inputType="textEmailAddress"
+                android:hint="Correo(*)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/textNombre"
+                android:padding="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:hint="Nombre(*)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/textCedula"
+                android:padding="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:hint="Cédula(*)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/textApellidos"
+                android:padding="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:hint="Apellidos(*)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/textTelfCasa"
+                android:padding="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:hint="Celular(*)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Opcional"
+                android:gravity="left"
+                android:textSize="11sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/textTelfTrab"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:hint="Convencional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Opcional"
+                android:gravity="left"
+                android:textSize="11sp"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/textDireccionCasa"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:hint="Dirección casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Opcional"
+                android:gravity="left"
+                android:textSize="11sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/textDireccionTrabajo"
+                android:paddingTop="5dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:hint="Dirección trabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textFechaNacimiento"
+                android:padding="20dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:hint="Fecha Nacimiento(*)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnEnviar"
+                android:textColor="@color/BLANCO"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Enviar"/>
+            <CheckBox android:id="@+id/checkTerminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/verdeMenu"
+                android:text="Acepto términos y condiciones. Leer mas..." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

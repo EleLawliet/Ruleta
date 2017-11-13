@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/com_facebook_button_background_color_focused"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.SoyNuevo">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/toolbarback"
+            android:gravity="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:src="@mipmap/logo_comandato2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/msj.bienvenido.perfil"
+                android:layout_marginTop="22dp"
+                android:textSize="15sp"
+                android:id="@+id/textView2" />
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:padding="4dp"
+                    android:src="@drawable/foto_user"
+                    android:layout_marginBottom="25dp"
+                     />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+
+                <EditText
+                    android:id="@+id/textNombre"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:hint="Nombre (*)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+                <EditText
+                    android:id="@+id/textApellidos"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:hint="Apellidos (*)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/textCedula"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:hint="Cédula (*)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/textUsuario"
+                    android:hint="Correo electrónico (*)"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/textDireccionTrabajo"
+                    android:hint="Dirección del Trabajo"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPostalAddress"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/textFechaNacimiento"
+                    android:hint="Fecha Nacimiento (YY/MM/DD) (*)"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:inputType="textEmailAddress|date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/textDireccionCasa"
+                    android:hint="Lugar de residencia"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+                <EditText
+                    android:id="@+id/textTelefonoCasa"
+                    android:hint="Teléfono"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+                <EditText
+                    android:id="@+id/textTelefonoTrabajo"
+                    android:hint="Celular (*)"
+                    android:padding="15dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/textContrasenia"
+                        android:padding="15dp"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:drawablePadding="10dp"
+                        android:textSize="15sp"
+                        android:drawableLeft="@mipmap/candado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp" />
+                    <ImageView
+                        android:src="@mipmap/ojo"
+                        android:id="@+id/imgOjo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:padding="25dp"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/textVerificar"
+                        android:padding="15dp"
+                        android:hint="Verificar Contraseña"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"
+                        android:drawableLeft="@mipmap/verificar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border" />
+                    <ImageView
+                        android:src="@mipmap/ojo"
+                        android:id="@+id/imgOjo2"
+                        android:text="qwert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:padding="25dp"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/com_facebook_button_background_color_focused"
+                    android:text="CREAR CUENTA"
+                    android:id="@+id/btnCrear"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/checkTerminos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/verdeMenu"
+                    android:text="Acepto términos y condiciones. Leer mas..." />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

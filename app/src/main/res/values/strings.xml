@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Comandato</string>
+    <string name="facebook_app_id">232553130533664</string>
+
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy.participar">Participar</string>
+    <string name="dummy.puntos.canje">Puntos de canje</string>
+    <string name="dummy.comentario">Comentario</string>
+    <string name="cerrar.sesion">Cerrar Sesión</string>
+    <string name="msj.bienvenido.login">Bienvenido, por favor inicia sesión</string>
+    <string name="msj.bienvenido.perfil">Para crear una cuenta debes llenar todos los campos obligatorios (*).</string>
+    <string name="nombre_transicion_imagen">imagen_compartida</string>
+    <string name="name_by_log">ComandatoApp</string>
+    <string name="str_not_connection">No hay conexión con el servidor intente mas tarde</string>
+    <string name="error_exception_toast">Error inesperado</string>
+    <string name="textoError">Mínimo 3 caracteres</string>
+    <string name="tituloInstrucciones">Instrucciones del juego</string>
+    <string name="textoInstrucciones">Para ingresar debes hacer esto:\n\n1.-Dependiendo de los intentos que tengas
+    podras participar en el juego\n2.- Seleccionar la opción "JUGAR"\n3.-Al dar click en jugar ganaras una cantidad de monedas
+        al azar\n4.-Dependiendo del monto de monedas podrás canjear los diferentes premios disponiblesy promociones</string>
+    <string name="correoIncorrecto">Correo Incorrecto</string>
+    <string name="fechaIncorrecta">Fecha Incorrecta</string>
+    <string name="numeroIncorrecto">Número Incorrecto</string>
+    <string name="contraseñaIncorrecto">Contraseñas Diferentes</string>
+    <string name="responsenull">No hay datos</string>
+    <string name="nombreArchivo">Comandato Ruleta</string>
+
+</resources>

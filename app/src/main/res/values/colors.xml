@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#024e9b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="background.layout">#8994a6</color>
+
+    <color name="black_overlay">#A6000000</color>
+    <color name="black">#000000</color>
+    <color name="transparente">#00000000</color>
+    <color name="translucido">#22000000</color>
+    <color name="BLANCO">#ffffff</color>
+    <color name="BLANCO_transparente">#B3ffffff</color>
+    <color name="ROJO">#A8DE0814</color>
+    <!--Colores de los iconos del Menu-->
+    <color name="verdeMenu">#80b73f</color>
+    <color name="naranjaMenu">#E25A29</color>
+    <color name="moradoMenu">#662D82</color>
+    <color name="amarilloMenu">#ECA140</color>
+    <color name="grisMenu">#58595B</color>
+    <!--Perfil-->
+    <color name="background">#486171</color>
+    <color name="colorTexto">#d9d7d8</color>
+
+
+</resources>

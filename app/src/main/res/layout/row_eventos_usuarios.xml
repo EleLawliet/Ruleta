@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="170dp">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/BLANCO_transparente"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="0.4"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="0.70"
+                android:src="@mipmap/imagen_premio"
+                android:id="@+id/imgPremio"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                />
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_weight="0.13"
+                android:textSize="17sp"
+                android:text="Regalo!!!"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/textFecha"
+                android:layout_weight="0.17"
+                android:text="Válido hasta 16/12/16"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="0.15"
+                android:id="@+id/textNivel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Nivel :1 "
+                android:visibility="gone"
+                android:paddingRight="10dp"
+                android:gravity="center|right"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="1"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:text="10"
+                    android:layout_weight="0.5"
+                    android:gravity="center|right"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textCosto" />
+
+                <LinearLayout
+                    android:layout_weight="0.5"
+                    android:weightSum="1"
+                    android:gravity="center|left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgMoneda"
+                        android:src="@drawable/icono_puntocanje"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_weight="0.15"
+                android:id="@+id/textDescripcion"
+                android:gravity="center"
+                android:text="Por pagos al día"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_height="0dp" />
+            <View
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:background="@color/verdeMenu" />
+            <LinearLayout
+                android:layout_weight=".25"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_weight=".75"
+                    android:id="@+id/textCanjear"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/back_btncanjear"
+                    android:gravity="center"
+                    android:text="RECLAMAR"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

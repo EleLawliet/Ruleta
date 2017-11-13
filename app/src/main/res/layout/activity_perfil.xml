@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prueba"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ec.com.innovasystem.comandato.Actividades.PerfilActivity">
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:fitsSystemWindows="true"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/main.appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            >
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorPrimaryDark"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleMarginEnd="64dp"
+                >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="@mipmap/cabecera_perfil"
+                        android:paddingTop="70dp"
+                        android:paddingBottom="35dp"
+                        android:gravity="center">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/btnFoto"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="2"
+                            app:border_color="@color/BLANCO"
+                            app:border_width="1dp"
+                            android:padding="4dp"
+                           />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/textNombrePerfil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/BLANCO"
+                                android:textSize="16sp"
+                                android:text="WILMER VERA GONZÁLEZ"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.5dp"
+                                android:background="@color/colorTexto"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="45dp"
+                                android:layout_marginRight="45dp"></View>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/textCorreo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="juniorwavg@gmail.com"
+                                    android:textColor="@color/BLANCO_transparente"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                <TextView
+                                    android:id="@+id/textFechaNacimiento"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/BLANCO_transparente"
+                                    android:layout_height="match_parent"
+                                    android:text="C.I.094348006"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                <include layout="@layout/toolbar_menu"/>
+                </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/BLANCO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Aquí puedes actualizar tu información"
+                        android:id="@+id/textView4"
+                        android:textStyle="italic"
+                        android:layout_margin="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+
+                        <EditText
+                            android:hint="Nombre"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:textStyle="italic"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_nombres"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+                        <EditText
+                            android:id="@+id/et_apellidos"
+                            android:hint="Apellidos"
+                            android:drawablePadding="10dp"
+                            android:inputType="textCapWords"
+                            android:textStyle="italic"
+                            android:textSize="15sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+                        <EditText
+                            android:hint="Cédula"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:textStyle="italic"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_Cedula"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+                        <EditText
+                            android:hint="Celular"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:textStyle="italic"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_Celular"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            />
+                        <EditText
+                            android:hint="Teléfono"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_Telefono"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+                        <TextView
+                            android:hint="Fecha"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:inputType="numberDecimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_fecha"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            />
+
+                        <EditText
+                            android:id="@+id/et_correo"
+                            android:drawablePadding="10dp"
+                            android:singleLine="true"
+                            android:textSize="15sp"
+                            android:inputType="textEmailAddress"
+                            android:hint="Correo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+                        <EditText
+                            android:hint="Dirección casa"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:inputType="textCapWords"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_direccion"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+                        <EditText
+                            android:hint="Dirección trabajo"
+                            android:drawablePadding="10dp"
+                            android:textSize="15sp"
+                            android:inputType="textCapWords"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="0dp"
+                            android:id="@+id/et_direccion_Trabajo"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/com_facebook_button_background_color_focused"
+                            android:text="EDITAR"
+                            android:id="@+id/buttonEditar"
+                            android:textStyle="italic"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+           </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades.MainActivity"
+    android:background="@color/BLANCO"
+    android:weightSum="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/toolbarback"
+            android:gravity="center"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:src="@mipmap/logo_comandato2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/slide_login"
+        android:id="@+id/iv_login"
+        android:scaleType="fitXY"
+        android:layout_weight="0.4" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="16dp"
+        android:layout_weight="0.39"
+        android:gravity="center_horizontal"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:text="@string/msj.bienvenido.login" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txt_usuario"
+            android:background="@drawable/border"
+            android:hint="Correo"
+            android:ems="12"
+            android:layout_below="@+id/iv_login"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textWebEmailAddress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/ojo"
+                android:id="@+id/iv_ver_contraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="15dp"
+                android:layout_alignParentRight="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txt_contrasenia"
+                android:hint="Contraseña"
+                android:ems="12"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/btn_login"
+            android:text="INGRESAR"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_contrasenia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="13dp"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_weight="0.3"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/btn_fb_login"
+            android:text="INGRESAR CON FACEBOOK"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="13dp"
+            android:paddingTop="11dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/btn_registro"
+                android:text="Crear Cuenta"
+                android:textSize="11dp"
+                android:textColor="@color/black_overlay"
+                android:background="@color/transparente"
+                android:layout_width="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right" />
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:background="@color/black_overlay"></View>
+            <TextView
+                android:id="@+id/textOlvidePass"
+                android:text="Olvidé contraseña"
+                android:textSize="11dp"
+                android:textColor="@color/black_overlay"
+                android:background="@color/transparente"
+                android:layout_width="0dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
